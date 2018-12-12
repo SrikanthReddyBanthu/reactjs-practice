@@ -1,3 +1,1 @@
-# reactjs-practice
-# reactjs-practice
-# reactjs-practice
+# This repo will have some practice ReactJS applications
