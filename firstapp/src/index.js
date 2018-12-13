@@ -14,13 +14,11 @@ class App extends Component {
 	}
 
 	render() {
-		console.log(JSON);
 
 		return (
     			<div>
     				<Header/>
-    				<h1> Hii to react</h1>
-    				<h2> Using functional component</h2>
+    				<h1>Hii to react</h1>
     				<NewsList newsdata={this.state.news}/>
     			</div>
     			)
