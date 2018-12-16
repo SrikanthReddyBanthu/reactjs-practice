@@ -2,31 +2,30 @@ import React from 'react';
 
 const NewsList = (props) => {
 
-	/*
-	const todoItems = props.newsdata.map((todo) =>
-      <li key={todo.id}>
-        {todo.title}
-      </li>
+	const items = props.newsdata.map((news, index) => {
+	  return(
+		<tr key={index}>
+			<td>{index + 1}</td>
+			<td>{news.title}</td>
+			<td>{news.feed}</td>
+		</tr>
+	  )}
     );
 
-	console.log(todoItems);
-*/
 	return (
 		<div>
 			<h1>News</h1>
 			<table>
-				<tr>
-					<th>ID</th>
-					<th>TITLE</th>
-					<th>FEED</th>
-				</tr>
-				{props.newsdata.map((news) =>
-				<tr>
-					<td>{news.id}</td>
-					<td>{news.title}</td>
-					<td>{news.feed}</td>
-				</tr>
-				)}
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>TITLE</th>
+						<th>FEED</th>
+					</tr>
+				</thead>
+				<tbody>
+					{items}
+				</tbody>
 			</table>
 		</div>
 	)

@@ -18,7 +18,7 @@ class Header extends Component {
 	inputChanges(event) {
 		console.log(this.state.title);
 		this.setState({keyword: event.target.value});
-		console.log(this.state.keyword);
+		this.props.newsSearch(event.target.value);
 	}
 
 	incrementNumber() {
