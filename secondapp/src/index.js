@@ -1,28 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import Posts from './components/posts';
 import Profile from './components/profile';
 import PostsDetail from './components/postsDetail';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 
-class App extends Component {
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			news: JSON,
-			filteredNews: JSON
-		}
-	}
-
-	render() {
-
-		return (
-    			<div>
-    				<h1>Routing</h1>
-    			</div>
-    			)
-	}
+const App = () => {
+	return (
+		<div>
+			<h1>Homepage</h1>
+		</div>
+	)
 }
 
 ReactDOM.render(
@@ -37,7 +25,7 @@ ReactDOM.render(
 							<span className="icon-bar"></span>
 							<span className="icon-bar"></span>
 						</button>
-						<a className="navbar-brand" href="#">WebSiteName</a>
+						<div className="navbar-brand">React Trail</div>
 						</div>
 						<div className="collapse navbar-collapse" id="myNavbar">
 						<ul className="nav navbar-nav">

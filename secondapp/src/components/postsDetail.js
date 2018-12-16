@@ -9,9 +9,9 @@ class PostsDetail extends Component {
 	render() {
 		return(
 			<div className="container">
-				<div class="panel panel-warning">
-				   <div class="panel-heading">Post Detail Heading</div>
-				   <div class="panel-body">Post Detail Content:{this.props.match.params.id}</div>
+				<div className="panel panel-warning">
+				   <div className="panel-heading">Post Detail Heading</div>
+				   <div className="panel-body">Post Detail Content:{this.props.match.params.id}</div>
 				</div>
 			</div>
 

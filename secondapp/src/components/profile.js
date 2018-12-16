@@ -5,9 +5,9 @@ class Profile extends Component {
 	render() {
 		return (
 			<div className="container">
-				<div class="panel panel-warning">
-				   <div class="panel-heading">Profile Heading</div>
-				   <div class="panel-body">Profile Content</div>
+				<div className="panel panel-warning">
+				   <div className="panel-heading">Profile Heading</div>
+				   <div className="panel-body">Profile Content</div>
 			    </div>
 			</div>
 		)
