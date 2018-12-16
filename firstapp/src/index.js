@@ -25,11 +25,11 @@ class App extends Component {
 	render() {
 
 		return (
-    			<div>
-    				<Header newsSearch={(data) => this.filterNews(data)}/>
-    				<NewsList newsdata={this.state.filteredNews}/>
-    			</div>
-    			)
+			<div>
+				<Header newsSearch={(data) => this.filterNews(data)}/>
+				<NewsList newsdata={this.state.filteredNews}/>
+			</div>
+			)
 	}
 }
 
