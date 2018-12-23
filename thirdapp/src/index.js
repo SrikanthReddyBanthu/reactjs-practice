@@ -9,8 +9,8 @@ const App = () => {
 	return(
 		<BrowserRouter>
 			<div>
-				<Route exec path="/" component={Home} />
-				<Route exec path="/artist/:artistId" component={Artist} />
+				<Route exact path="/" component={Home} />
+				<Route path="/artist/:artistId" component={Artist} />
 			</div>
 		</BrowserRouter>
 	)
